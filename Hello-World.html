@@ -1,26 +1,64 @@
-<!DOCTYPE htlm>
-<html>
-    <body>
-        <h1>İlk Başlığım</h1>
-        <p>İlk Paragrafım</p>
-        <a href="http://www.google.com.tr">İlk Linkleme işlemim</a>
-        <p> <!--Resim Eklenişi-->
-            <img src="http://www.ismailcerban.com/blog/wp-content/uploads/2019/02/hello-world.png" 
-             width="400" height="300">
-        </p>
-        <p>
-            <button>İlk Butonum</button>
-        </p>
-        <ul><!--numara veya sıralama gerektirmeyen maddelemede kullanılır-->
-            <li>Coffee</li>
-            <li>Tea</li>
-            <li>Milk</li>
-          </ul>
-          
-          <ol><!--numara veya sıralama içeren maddelemede kullanılır-->
-            <li>Coffee</li>
-            <li>Tea</li>
-            <li>Milk</li>
-          </ol>
-    </body>
+<!DOCTYPE html>
+<html lang="tr">
+<!--lang hmtl'in dilini belirlemek için kullanılır-->
+
+<head>
+    <!--head etiketi meta bilgileri içerir kullanıcıya gösterilmez-->
+    <title>Html Alıştırmalarım</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h1 title="Başlığın Title'ı">İlk Başlığım</h1>
+    <!--title ile bir nevi yorum oluşturuyoruz-->
+    <p>İlk Paragrafım</p>
+    <a href="http://www.google.com.tr">İlk Linkleme işlemim</a>
+    <p>
+        <!--Resim Eklenişi-->
+        <img src="http://www.ismailcerban.com/blog/wp-content/uploads/2019/02/hello-world.png" width="400" height="300"
+            alt="İnsanları Severim">
+        <!--resim yüklenemediğinde veya bulunamadığında gösterilecek şey=alt-->
+    </p>
+    <p>
+        <button>İlk Butonum</button>
+    </p>
+    <!--style ile nesne veya componentlerin özelliklerini değiştirebiliriz-->
+    <ul style="color: aqua; background-color: orchid;font-family: 'Times New Roman', Times, serif">
+        <!--numara veya sıralama gerektirmeyen maddelemede kullanılır-->
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk
+            <ul>
+                <li>Deneme</li>
+                <li>choco</li>
+                <li>sheep milk</li>
+            </ul>
+        </li>
+
+    </ul>
+
+    <ol>
+        <!--numara veya sıralama içeren maddelemede kullanılır-->
+        <li>Fruits
+            <ol>
+                <li>Coffee</li>
+                <li>orange</li>
+                <li>Apple</li>
+            </ol>
+        </li>
+        <li><i>İtalik Tea</i></li>
+        <li><strong>Güçlü</strong></li>
+    </ol>
+    <!--hr etiketi örneği başlıyor-->
+    <h1 style="border: 2px solid rgb(71, 227, 255)">Bu bir başlıktır</h1>
+    <p style="color: aqua; font-family: 'Times New Roman', Times, serif ">
+        <sub>alt metin</sub> bu bir paragraftır<sup>üst metin</sup>
+    </p>
+    <hr>
+    <h1>Bu <del>silinmiş yazı </del> başlıktır</h1>
+    <p>Bu ikinci paragraftır</p>
+    <hr>
+    <!--hr etiketi örneği bitiyor-->
+</body>
+
 </html>
